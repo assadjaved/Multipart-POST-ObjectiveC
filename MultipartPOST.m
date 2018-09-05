@@ -14,7 +14,7 @@
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     // create url
-    NSString *url = @"http://ptsv2.com/t/a370p-1536077510/post";
+    NSString *url = @"ENTER_URL_HERE";
     [request setURL:[NSURL URLWithString:url]];
     // cache policy
     [request setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
@@ -25,7 +25,7 @@
     // http method type
     [request setHTTPMethod:@"POST"];
     // auth token
-//    [request setValue:@"AUTH_TOKEN_IF_ANY" forHTTPHeaderField:@"x-access-token"];
+    [request setValue:@"AUTH_TOKEN_IF_ANY" forHTTPHeaderField:@"x-access-token"];
     
     // define request boundary
     NSString *boundary = [MultipartPOST generateBoundaryString];
